@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Courgette&family=Yeon+Sung&family=Permanent+Marker&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url(back.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.containter {
+    width: 1100px;
+    margin: auto;
+}*/
+
+.container {
+    border: 1px solid black;
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(235, 20, 20, 0.2);
+    padding: 90px 50px;
+    display: flex;
+}
+
+.container:hover {
+    background-color: rgb(219, 219, 163);
+}
+
+.leftside,
+.rightside {
+    width: 50%;
+}
+
+.leftside img {
+    width: 180px;
+    margin-top: 20px;
+}
+
+.leftside p {
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(238, 114, 98);
+    margin-top: 10px;
+}
+
+.rightside {
+    padding: 10px 0px;
+
+}
+
+.rightside h1 {
+    color: rgb(105, 105, 241);
+    font-size: 43px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.leftside p:hover {
+    color: rgb(197, 89, 165);
+}
+
+
+.rightside h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(22, 22, 51);
+    font-family: 'Courgette', cursive;
+}
+
+.rightside ul {
+    margin-top: 10px;
+}
+
+.rightside li {
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    list-style-type: circle;
+    list-style-position: inside;
+    font-weight: bold;
+}
+
+
+.rightside a {
+    background-color: rgb(120, 120, 235);
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*question html start*/
+
+.box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    min-height: 450px;
+    width: 740px;
+    margin-top: 80px;
+    padding: 50px 50px;
+}
+
+.title h1 {
+    border-bottom: 1px solid black;
+    color: rgb(52, 71, 71);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scorebox {
+    border: 1px solid black;
+    width: 80px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.timerbox {
+    border: 1px solid black;
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.questionbox {
+    background-color: rgb(112, 75, 112);
+    border: 1px solid rgb(116, 77, 116);
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.option1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+
+}
+
+.option1 span {
+    background-color: rgb(211, 209, 209);
+    border: 1px solid rgb(211, 209, 209);
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.option1 p {
+    background-color: rgb(211, 209, 209);
+    border: 1px solid rgb(211, 209, 209);
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.option1 p1 {
+    background-color: rgb(211, 209, 209);
+    border: 1px solid rgb(211, 209, 209);
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.option1 p2 {
+    background-color: rgb(211, 209, 209);
+    border: 1px solid rgb(211, 209, 209);
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+}
+
+.footer .btn {
+    font-size: 17px;
+    width: 70px;
+    background-color: rgb(93, 93, 219);
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.footer .BTN {
+    font-size: 17px;
+    width: 110px;
+    background-color: rgb(93, 93, 219);
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.resultBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+}
+
+
+
+.resultBox *:nth-child(odd) {
+    text-align: right;
+}
+
+.buttonBox {
+    border-top: 1px solid black;
+    padding-top: 15px;
+    text-align: center;
+
+}
+
+
+
+.buttonBox a {
+    background-color: rgb(27, 27, 235);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px 15px;
+    cursor: pointer;
+
+}
+
+/*css from javascript*/
+
+.option1 .right {
+    background-color: rgb(104, 238, 104);
+}
+
+.option1 .wrong {
+    background-color: red;
+}

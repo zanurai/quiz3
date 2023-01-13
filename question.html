@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="box" id="questionScreen">
+        <div class="title">
+            <h1>Quiz Application</h1>
+        </div>
+        <div class="header">
+            <div class="scorebox">Score : <span>0</span></div>
+            <div class="timerbox" id="time">Time Left : 00:00 <span></span></div>
+        </div>
+        <div class="questionbox">
+            what dose HTML stand for?
+        </div>
+        <div class="option1" id="option3">
+            <span onClick="checkAnswer(this)" data-opt="1"></span>
+            <p onClick="checkAnswer(this)" data-opt="2"></p>
+            <p1 onClick="checkAnswer(this)" data-opt="3"></p1>
+            <p2 onClick="checkAnswer(this)" data-opt="4"></p2>
+        </div>
+        <div class="footer">
+            <button onClick="showNext()" class="btn">Next</button>
+            <button onClick="showResult(2)" class="BTN">Show Result</button>
+        </div>
+    </div>
+
+
+    <div class="box" id="resultScreen" style="display:none;">
+        <div class="title">
+            <h1>Quiz result</h1>
+        </div>
+        <div class="resultBox">
+            <label>Question : </label>
+            <span id="totalQuestion">10</span>
+            <label>Attempt : </label>
+            <span id="attemptQuestion"> 0</span>
+            <label> correct : </label>
+            <span id="correctAnswer">0</span>
+            <label>wrong : </label>
+            <span id="wrongAnswer">0</span>
+        </div>
+        <div class="buttonBox">
+            <a href="index.html">Start Again</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src=" quiz.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
